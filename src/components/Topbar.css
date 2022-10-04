@@ -1,0 +1,137 @@
+.topbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(34,33,34,1) 50%);
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbar-wrapper {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+}
+
+.topbar-logo {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  display: flex;
+  justify-self: flex-start;
+  font-size: 22px;
+  align-items: center;
+}
+
+.fa-diamond {
+  margin-left: 10px;
+  color: gold;
+}
+
+.topbar-icon {
+  display: none;
+}
+
+.fa-bars, .fa-x {
+  font-size: 25px;
+  color: #fff;
+}
+
+.topbar-items {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 80vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.topbar-item {
+  min-width: 80px;
+  font-size: 18px;
+  height: 80px;
+  padding: 0.5rem 1rem;
+}
+
+.topbar-item:first-child{
+  min-width: 60px;
+}
+
+.topbar-item-link {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.topbar-item-link:hover {
+  border-bottom: 3px solid #fff;
+  transition: all .3s ease-out;
+}
+
+.topbar-item-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .topbar-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+  }
+
+  .topbar-items.active {
+    background: #242424;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+  }
+
+  .topbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 100%);
+  }
+
+  .topbar-item-link {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    display: table;
+    font-size: 20px;
+  }
+
+  .topbar-item-link:hover {
+    background-color: #fff;
+    color: #242424;
+  }
+
+  .topbar-item-mobile {
+    display: block;
+    border: 2px solid #fff;
+  }
+
+  .topbar-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 100%);
+  }
+}
