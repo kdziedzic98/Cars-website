@@ -18,11 +18,12 @@ function Topbar() {
     }
   };
 
-  // useEffect =
-  //   (() => {
-  //     displayButton();
-  //   },
-  //   []);
+  useEffect =
+    (() => {
+      displayButton();
+    },
+    []);
+
   window.addEventListener("resize", displayButton);
 
   return (
@@ -69,5 +70,4 @@ function Topbar() {
     </nav>
   );
 }
-
 export default Topbar;
