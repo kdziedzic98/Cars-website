@@ -16,7 +16,8 @@
 
 .about-us,
 .gallery,
-.our-offers {
+.our-offers,
+.sign-up {
   color: #fff;
   font-size: 100px;
   display: flex;

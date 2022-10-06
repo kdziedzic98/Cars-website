@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  flex-basis: auto;
 }
 
 .topbar-wrapper {
@@ -48,7 +49,7 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 80vw;
+  width: 60vw;
   justify-content: end;
   margin-right: 2rem;
 }
@@ -87,9 +88,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
     position: absolute;
     top: 80px;
+    padding-bottom: 90vh;
     left: -100%;
     opacity: 1;
   }
@@ -111,7 +112,7 @@
 
   .topbar-item-link {
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
     width: 100%;
     display: table;
     font-size: 20px;
@@ -124,7 +125,10 @@
 
   .topbar-item-mobile {
     display: block;
+    text-align: center;
+    min-width: 80%;
     border: 2px solid #fff;
+    margin-top: 8px;
   }
 
   .topbar-icon {

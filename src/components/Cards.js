@@ -28,14 +28,16 @@ const Cards = () => {
           pagination={{ clickable: true }}
         >
           <SwiperSlide className="swiperslide">
-            <img src={audi} alt="audi" />
-            <h2 className="swiper-img-headline1">Audi RS3</h2>
-            <p className="swiper-img-paragraph1">
-              Model year: 2022 Engine: 2.5 TFSI 401HP
-            </p>
-            <Button buttonSize="btn--big" buttonStyle="btn--primary">
-              Check offer
-            </Button>
+            <div className="wrap">
+              <img src={audi} alt="audi" />
+              <h2 className="swiper-img-headline1">Audi RS3</h2>
+              <p className="swiper-img-paragraph1">
+                Model year: 2022 Engine: 2.5 TFSI 401HP
+              </p>
+              <Button buttonSize="btn--big" buttonStyle="btn--primary">
+                Check offer
+              </Button>
+            </div>
           </SwiperSlide>
           <SwiperSlide className="swiperslide">
             <img src={bmwm8} alt="bmwm8" />
