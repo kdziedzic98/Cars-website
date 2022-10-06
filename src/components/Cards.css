@@ -1,7 +1,5 @@
 .cards {
   padding: 20px;
-  background: url("/src/images/background.jpg") center center/cover no-repeat;
-  z-index: -1;
 }
 
 .cards--container {
@@ -31,6 +29,11 @@
   max-height: 100%;
   object-fit: cover;
   z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiperslide img:hover {
+  transform: scale(1.1);
 }
 
 .cards--headline {

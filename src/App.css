@@ -2,9 +2,63 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root{
   background-color: #fff;
+}
+
+.app {
+  background: url("/src/images/background.jpg") center center no-repeat fixed;
+  z-index: -1;
+}
+
+.about-us,
+.gallery,
+.our-offers {
+  color: #fff;
+  font-size: 100px;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us {
+  background-image: url('/src/images/img-10.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+.gallery {
+  background-image: url('/src/images/img-8.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+.our-offers {
+  background-image: url('/src/images/img-9.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+.sign-up {
+  background-image: url('/src/images/img-11.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-bottom: 30px;
 }

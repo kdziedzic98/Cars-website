@@ -18,11 +18,9 @@ function Topbar() {
     }
   };
 
-  useEffect =
-    (() => {
-      displayButton();
-    },
-    []);
+  useEffect(() => {
+    displayButton();
+  }, []);
 
   window.addEventListener("resize", displayButton);
 
@@ -46,23 +44,44 @@ function Topbar() {
             </Link>
           </li>
           <li className="topbar-item">
-            <Link to="/" className="topbar-item-link" onClick={closeMobileMenu}>
+            <Link
+              to="/offers"
+              className="topbar-item-link"
+              onClick={closeMobileMenu}
+            >
               Our offers
             </Link>
           </li>
           <li className="topbar-item">
-            <Link to="/" className="topbar-item-link" onClick={closeMobileMenu}>
-              Contact
+            <Link
+              to="/gallery"
+              className="topbar-item-link"
+              onClick={closeMobileMenu}
+            >
+              Gallery
+            </Link>
+          </li>
+          <li className="topbar-item">
+            <Link
+              to="/about-us"
+              className="topbar-item-link"
+              onClick={closeMobileMenu}
+            >
+              About us
             </Link>
           </li>
           <li className="topbar-item-mobile">
-            <Link to="/" className="topbar-item-link" onClick={closeMobileMenu}>
+            <Link
+              to="/sign-up"
+              className="topbar-item-link"
+              onClick={closeMobileMenu}
+            >
               Sign Up
             </Link>
           </li>
         </ul>
         {button && (
-          <Button buttonStyle="btn--border" buttonSize="btn--large">
+          <Button buttonStyle="btn--border" buttonSize="btn--big">
             Sign Up
           </Button>
         )}

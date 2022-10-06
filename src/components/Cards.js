@@ -47,7 +47,7 @@ const Cards = () => {
               Check offer
             </Button>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiperslide">
             <img src={jaguar} alt="jaguar" />
             <h2 className="swiper-img-headline">Jaguar XE P300</h2>
             <p className="swiper-img-paragraph">
@@ -57,7 +57,7 @@ const Cards = () => {
               Check offer
             </Button>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiperslide">
             <img src={ford} alt="ford" />
             <h2 className="swiper-img-headline">Ford Mustang Mach 1</h2>
             <p className="swiper-img-paragraph">
@@ -67,7 +67,7 @@ const Cards = () => {
               Check offer
             </Button>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiperslide">
             <img src={bmwx7} alt="bmwx7" />
             <h2 className="swiper-img-headline">BMW 740d Xdrive</h2>
             <p className="swiper-img-paragraph">
