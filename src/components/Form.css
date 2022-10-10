@@ -1,0 +1,99 @@
+.sign-up-container {
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    max-width: 500px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.names {
+  width: 300px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.email, .password, .date {
+  width: 600px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.password2 {
+  width: 600px;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-message {
+  padding: 10px;
+  color: crimson;
+  font-size: 18px;
+}
+
+.form-sex-wrapper, .form-date-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sex-wrapper2 {
+  display: flex;
+  gap: 10px;
+}
+
+.sex {
+  font-size: 18px;
+}
+
+.male-container {
+  width: 295px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    justify-content: space-between;
+}
+
+.female-container {
+  width: 295px;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  font-size: 24px;
+  justify-content: space-between;
+}
+
+.tips {
+  text-align: left;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+.form-btn {
+  margin-top: 40px;
+  padding: 10px 50px;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  outline: none;
+}
